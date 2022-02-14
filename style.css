@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blue-jeans : #33A7FF;
+    --dodger-blue : #0A95FF;
+    --isabelline : #F6F4F1;
+    --android-green : #B7CF34;
+    --light-gray : #D0CDCA;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, var(--dodger-blue), var(--blue-jeans));
+}
+
+.container{
+    width: 40%;
+    min-width: 350px;
+    background-color: var(--isabelline);
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: .5rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scores{
+    margin-bottom: 3rem;
+    text-align: right;
+    font-weight: 600;
+}
+
+.weapons{
+    width: 90%;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+}
+
+.weapons button{
+    font-size: 3.5rem;
+    border: none;
+    background-color: var(--android-green);
+    color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.details{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.scores,
+.details{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#result{
+    width: 180px;
+    padding: 10px 0;
+    margin: 30px auto;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border-radius: .5rem;
+}
+
+#user-choice,
+#comp-choice{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+span{
+    font-weight: 600;
+}
+
+@media (max-width: 500px){
+   .container{
+       min-width: 280px;
+   }
+
+   .weapons{
+       width: 100%;
+   }
+
+   .weapons button{
+       height: 50px;
+       width: 50px;
+       font-size: 2rem;
+   }
+}

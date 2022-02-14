@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit | Gunting Kertas Batu</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>
+                Komputer : <span id="computer-score">0</span>
+            </p>
+            <p>
+                Kamu : <span id="user-score">0</span>
+            </p>
+        </div>
+        <div class="weapons">
+            <button onclick="checker('batu')">
+                <i class="las la-hand-rock"></i>
+            </button>
+            <button onclick="checker('kertas')">
+                <i class="las la-hand-paper"></i>
+            </button>
+            <button onclick="checker('gunting')">
+                <i class="las la-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user-choice"></p>
+            <p id="comp-choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
